@@ -1,15 +1,15 @@
 //
-//  DFPayment.m
+//  DFToken.m
 //  PagosObjectiveC
 //
 //  Created by Santiago Zavala de la Vega on 7/5/14.
 //  Copyright (c) 2014 Dfectuoso. All rights reserved.
 //
 
-#import "DFPayment.h"
+#import "DFToken.h"
 
-@implementation DFPayment
+@implementation DFToken
 
-@synthesize description, amount, currency, referenceId;
+@synthesize conektaId, livemode, used;
 
 @end

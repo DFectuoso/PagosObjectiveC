@@ -2,6 +2,8 @@
 
 @interface DFMainMenuViewController : UIViewController
 
-- (IBAction)simplePaymentManuClickedBy:(id)sender;
+- (IBAction)simplePaymentMenuClickedBy:(id)sender;
+- (IBAction)complexPaymentMenuClickedBy:(id)sender;
+- (IBAction)clearSession:(id)sender;
 
 @end

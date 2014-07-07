@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B607F3EB1968882D00BA46A1 /* DFToken.m in Sources */ = {isa = PBXBuildFile; fileRef = B607F3EA1968882D00BA46A1 /* DFToken.m */; };
+		B607F3EF1968AB2A00BA46A1 /* DFAddOrSelectCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B607F3ED1968AB2A00BA46A1 /* DFAddOrSelectCardViewController.m */; };
+		B607F3F01968AB2A00BA46A1 /* DFAddOrSelectCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B607F3EE1968AB2A00BA46A1 /* DFAddOrSelectCardViewController.xib */; };
+		B607F3F41968AB3D00BA46A1 /* DFAddCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B607F3F21968AB3D00BA46A1 /* DFAddCardViewController.m */; };
+		B607F3F51968AB3D00BA46A1 /* DFAddCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B607F3F31968AB3D00BA46A1 /* DFAddCardViewController.xib */; };
+		B607F3F91968AB4E00BA46A1 /* DFPaymentSummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B607F3F71968AB4E00BA46A1 /* DFPaymentSummaryViewController.m */; };
+		B607F3FA1968AB4E00BA46A1 /* DFPaymentSummaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B607F3F81968AB4E00BA46A1 /* DFPaymentSummaryViewController.xib */; };
+		B607F4011968AB8500BA46A1 /* DFPaidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B607F3FF1968AB8500BA46A1 /* DFPaidViewController.m */; };
+		B607F4021968AB8500BA46A1 /* DFPaidViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B607F4001968AB8500BA46A1 /* DFPaidViewController.xib */; };
+		B607F4061968B62C00BA46A1 /* DFClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B607F4051968B62C00BA46A1 /* DFClient.m */; };
+		B607F4091968CFA200BA46A1 /* DFPaymentServer.m in Sources */ = {isa = PBXBuildFile; fileRef = B607F4081968CFA200BA46A1 /* DFPaymentServer.m */; };
 		B62BEE9319686E8F00490F4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62BEE9219686E8F00490F4F /* Foundation.framework */; };
 		B62BEE9519686E8F00490F4F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62BEE9419686E8F00490F4F /* CoreGraphics.framework */; };
 		B62BEE9719686E8F00490F4F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62BEE9619686E8F00490F4F /* UIKit.framework */; };
@@ -23,7 +34,7 @@
 		B62BEECD1968715B00490F4F /* DFSimplePaymentsExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B62BEECB1968715B00490F4F /* DFSimplePaymentsExampleViewController.xib */; };
 		B62BEED1196874B900490F4F /* DFConekta.m in Sources */ = {isa = PBXBuildFile; fileRef = B62BEED0196874B900490F4F /* DFConekta.m */; };
 		B62BEED4196874C700490F4F /* DFCard.m in Sources */ = {isa = PBXBuildFile; fileRef = B62BEED3196874C700490F4F /* DFCard.m */; };
-		B62BEED7196874D100490F4F /* DFPayment.m in Sources */ = {isa = PBXBuildFile; fileRef = B62BEED6196874D100490F4F /* DFPayment.m */; };
+		B62BEED7196874D100490F4F /* DFCharge.m in Sources */ = {isa = PBXBuildFile; fileRef = B62BEED6196874D100490F4F /* DFCharge.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +48,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B607F3E91968882D00BA46A1 /* DFToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFToken.h; sourceTree = "<group>"; };
+		B607F3EA1968882D00BA46A1 /* DFToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFToken.m; sourceTree = "<group>"; };
+		B607F3EC1968AB2A00BA46A1 /* DFAddOrSelectCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFAddOrSelectCardViewController.h; sourceTree = "<group>"; };
+		B607F3ED1968AB2A00BA46A1 /* DFAddOrSelectCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFAddOrSelectCardViewController.m; sourceTree = "<group>"; };
+		B607F3EE1968AB2A00BA46A1 /* DFAddOrSelectCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DFAddOrSelectCardViewController.xib; sourceTree = "<group>"; };
+		B607F3F11968AB3D00BA46A1 /* DFAddCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFAddCardViewController.h; sourceTree = "<group>"; };
+		B607F3F21968AB3D00BA46A1 /* DFAddCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFAddCardViewController.m; sourceTree = "<group>"; };
+		B607F3F31968AB3D00BA46A1 /* DFAddCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DFAddCardViewController.xib; sourceTree = "<group>"; };
+		B607F3F61968AB4E00BA46A1 /* DFPaymentSummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFPaymentSummaryViewController.h; sourceTree = "<group>"; };
+		B607F3F71968AB4E00BA46A1 /* DFPaymentSummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFPaymentSummaryViewController.m; sourceTree = "<group>"; };
+		B607F3F81968AB4E00BA46A1 /* DFPaymentSummaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DFPaymentSummaryViewController.xib; sourceTree = "<group>"; };
+		B607F3FE1968AB8500BA46A1 /* DFPaidViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFPaidViewController.h; sourceTree = "<group>"; };
+		B607F3FF1968AB8500BA46A1 /* DFPaidViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFPaidViewController.m; sourceTree = "<group>"; };
+		B607F4001968AB8500BA46A1 /* DFPaidViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DFPaidViewController.xib; sourceTree = "<group>"; };
+		B607F4041968B62C00BA46A1 /* DFClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFClient.h; sourceTree = "<group>"; };
+		B607F4051968B62C00BA46A1 /* DFClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFClient.m; sourceTree = "<group>"; };
+		B607F4071968CFA200BA46A1 /* DFPaymentServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFPaymentServer.h; sourceTree = "<group>"; };
+		B607F4081968CFA200BA46A1 /* DFPaymentServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFPaymentServer.m; sourceTree = "<group>"; };
 		B62BEE8F19686E8F00490F4F /* PagosObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagosObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62BEE9219686E8F00490F4F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B62BEE9419686E8F00490F4F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,8 +89,8 @@
 		B62BEED0196874B900490F4F /* DFConekta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFConekta.m; sourceTree = "<group>"; };
 		B62BEED2196874C700490F4F /* DFCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCard.h; sourceTree = "<group>"; };
 		B62BEED3196874C700490F4F /* DFCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCard.m; sourceTree = "<group>"; };
-		B62BEED5196874D100490F4F /* DFPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFPayment.h; sourceTree = "<group>"; };
-		B62BEED6196874D100490F4F /* DFPayment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFPayment.m; sourceTree = "<group>"; };
+		B62BEED5196874D100490F4F /* DFCharge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCharge.h; sourceTree = "<group>"; };
+		B62BEED6196874D100490F4F /* DFCharge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCharge.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +117,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B607F3FB1968AB5600BA46A1 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				B62BEEA119686E8F00490F4F /* DFAppDelegate.h */,
+				B62BEEA219686E8F00490F4F /* DFAppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		B607F3FC1968AB5F00BA46A1 /* SimplePayment */ = {
+			isa = PBXGroup;
+			children = (
+				B62BEEC91968715B00490F4F /* DFSimplePaymentsExampleViewController.h */,
+				B62BEECA1968715B00490F4F /* DFSimplePaymentsExampleViewController.m */,
+				B62BEECB1968715B00490F4F /* DFSimplePaymentsExampleViewController.xib */,
+			);
+			name = SimplePayment;
+			sourceTree = "<group>";
+		};
+		B607F3FD1968AB6C00BA46A1 /* ComplexPayment */ = {
+			isa = PBXGroup;
+			children = (
+				B607F3EC1968AB2A00BA46A1 /* DFAddOrSelectCardViewController.h */,
+				B607F3ED1968AB2A00BA46A1 /* DFAddOrSelectCardViewController.m */,
+				B607F3EE1968AB2A00BA46A1 /* DFAddOrSelectCardViewController.xib */,
+				B607F3F11968AB3D00BA46A1 /* DFAddCardViewController.h */,
+				B607F3F21968AB3D00BA46A1 /* DFAddCardViewController.m */,
+				B607F3F31968AB3D00BA46A1 /* DFAddCardViewController.xib */,
+				B607F3F61968AB4E00BA46A1 /* DFPaymentSummaryViewController.h */,
+				B607F3F71968AB4E00BA46A1 /* DFPaymentSummaryViewController.m */,
+				B607F3F81968AB4E00BA46A1 /* DFPaymentSummaryViewController.xib */,
+				B607F3FE1968AB8500BA46A1 /* DFPaidViewController.h */,
+				B607F3FF1968AB8500BA46A1 /* DFPaidViewController.m */,
+				B607F4001968AB8500BA46A1 /* DFPaidViewController.xib */,
+			);
+			name = ComplexPayment;
+			sourceTree = "<group>";
+		};
+		B607F4031968AB8D00BA46A1 /* Main Menu */ = {
+			isa = PBXGroup;
+			children = (
+				B62BEEC4196870E700490F4F /* DFMainMenuViewController.h */,
+				B62BEEC5196870E700490F4F /* DFMainMenuViewController.m */,
+				B62BEEC6196870E700490F4F /* DFMainMenuViewController.xib */,
+			);
+			name = "Main Menu";
+			sourceTree = "<group>";
+		};
 		B62BEE8619686E8E00490F4F = {
 			isa = PBXGroup;
 			children = (
@@ -121,16 +198,12 @@
 		B62BEE9819686E8F00490F4F /* PagosObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
-				B62BEEA119686E8F00490F4F /* DFAppDelegate.h */,
-				B62BEEA219686E8F00490F4F /* DFAppDelegate.m */,
+				B607F4031968AB8D00BA46A1 /* Main Menu */,
+				B607F3FD1968AB6C00BA46A1 /* ComplexPayment */,
+				B607F3FC1968AB5F00BA46A1 /* SimplePayment */,
+				B607F3FB1968AB5600BA46A1 /* App Delegate */,
 				B62BEEA419686E8F00490F4F /* Images.xcassets */,
 				B62BEE9919686E8F00490F4F /* Supporting Files */,
-				B62BEEC4196870E700490F4F /* DFMainMenuViewController.h */,
-				B62BEEC5196870E700490F4F /* DFMainMenuViewController.m */,
-				B62BEEC6196870E700490F4F /* DFMainMenuViewController.xib */,
-				B62BEEC91968715B00490F4F /* DFSimplePaymentsExampleViewController.h */,
-				B62BEECA1968715B00490F4F /* DFSimplePaymentsExampleViewController.m */,
-				B62BEECB1968715B00490F4F /* DFSimplePaymentsExampleViewController.xib */,
 			);
 			path = PagosObjectiveC;
 			sourceTree = "<group>";
@@ -153,8 +226,14 @@
 				B62BEED0196874B900490F4F /* DFConekta.m */,
 				B62BEED2196874C700490F4F /* DFCard.h */,
 				B62BEED3196874C700490F4F /* DFCard.m */,
-				B62BEED5196874D100490F4F /* DFPayment.h */,
-				B62BEED6196874D100490F4F /* DFPayment.m */,
+				B62BEED5196874D100490F4F /* DFCharge.h */,
+				B62BEED6196874D100490F4F /* DFCharge.m */,
+				B607F3E91968882D00BA46A1 /* DFToken.h */,
+				B607F3EA1968882D00BA46A1 /* DFToken.m */,
+				B607F4041968B62C00BA46A1 /* DFClient.h */,
+				B607F4051968B62C00BA46A1 /* DFClient.m */,
+				B607F4071968CFA200BA46A1 /* DFPaymentServer.h */,
+				B607F4081968CFA200BA46A1 /* DFPaymentServer.m */,
 			);
 			name = DFConekta;
 			path = PagosObjectiveC;
@@ -236,10 +315,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B607F4021968AB8500BA46A1 /* DFPaidViewController.xib in Resources */,
+				B607F3F51968AB3D00BA46A1 /* DFAddCardViewController.xib in Resources */,
 				B62BEEC8196870E700490F4F /* DFMainMenuViewController.xib in Resources */,
 				B62BEE9D19686E8F00490F4F /* InfoPlist.strings in Resources */,
 				B62BEECD1968715B00490F4F /* DFSimplePaymentsExampleViewController.xib in Resources */,
 				B62BEEA519686E8F00490F4F /* Images.xcassets in Resources */,
+				B607F3FA1968AB4E00BA46A1 /* DFPaymentSummaryViewController.xib in Resources */,
+				B607F3F01968AB2A00BA46A1 /* DFAddOrSelectCardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,13 +340,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B607F4011968AB8500BA46A1 /* DFPaidViewController.m in Sources */,
+				B607F3F41968AB3D00BA46A1 /* DFAddCardViewController.m in Sources */,
 				B62BEED1196874B900490F4F /* DFConekta.m in Sources */,
 				B62BEED4196874C700490F4F /* DFCard.m in Sources */,
 				B62BEEA319686E8F00490F4F /* DFAppDelegate.m in Sources */,
 				B62BEE9F19686E8F00490F4F /* main.m in Sources */,
 				B62BEECC1968715B00490F4F /* DFSimplePaymentsExampleViewController.m in Sources */,
+				B607F4091968CFA200BA46A1 /* DFPaymentServer.m in Sources */,
+				B607F3F91968AB4E00BA46A1 /* DFPaymentSummaryViewController.m in Sources */,
+				B607F3EF1968AB2A00BA46A1 /* DFAddOrSelectCardViewController.m in Sources */,
 				B62BEEC7196870E700490F4F /* DFMainMenuViewController.m in Sources */,
-				B62BEED7196874D100490F4F /* DFPayment.m in Sources */,
+				B62BEED7196874D100490F4F /* DFCharge.m in Sources */,
+				B607F3EB1968882D00BA46A1 /* DFToken.m in Sources */,
+				B607F4061968B62C00BA46A1 /* DFClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +545,7 @@
 				B62BEEBD19686E8F00490F4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B62BEEBE19686E8F00490F4F /* Build configuration list for PBXNativeTarget "PagosObjectiveCTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +554,7 @@
 				B62BEEC019686E8F00490F4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

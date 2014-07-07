@@ -1,5 +1,10 @@
 #import "DFMainMenuViewController.h"
 
+#import "DFSimplePaymentsExampleViewController.h"
+#import "DFAddOrSelectCardViewController.h"
+
+#import "DFConekta.h"
+
 @interface DFMainMenuViewController ()
 
 @end
@@ -17,11 +22,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-
+    [[self navigationController] setNavigationBarHidden:NO];
 }
 
-- (IBAction)simplePaymentManuClickedBy:(id)sender{
-    
+- (void)viewDidAppear:(BOOL)animated{
+    [[self navigationController] setNavigationBarHidden:NO];
+}
+
+- (IBAction)simplePaymentMenuClickedBy:(id)sender{
+    DFSimplePaymentsExampleViewController* c = [[DFSimplePaymentsExampleViewController alloc] init];
+    [[self navigationController] pushViewController:c animated:YES];
+}
+
+- (IBAction)complexPaymentMenuClickedBy:(id)sender{
+    DFAddOrSelectCardViewController* c = [[DFAddOrSelectCardViewController alloc] init];
+    [[self navigationController] pushViewController:c animated:YES];
+}
+
+- (IBAction)clearSession:(id)sender{
+    DFConekta* conekta = [[DFConekta alloc] initWithApiKey:@"Qfw4ZozppXFtvDqaUdt1"];
+    [conekta clearLocalClient];
+    NSLog(@"Cleared");
 }
 
 - (void)didReceiveMemoryWarning {
