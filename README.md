@@ -1,14 +1,15 @@
-## Configuración Inicial para SimplePayment
+### Configuración Inicial en iOS (tokenizar & SimplePayment)
 
 1. Clonar el proyecto ``git clone repositorio`` y abrir con Xcode.
 
-2. Ir al archivo ``PagosObjectiveC/DFConekta.m`` en la línea 10 colocar tu llave pública de Conekta (admin.conekta.io):
+2. Ir al archivo ``PagosObjectiveC/DFConekta.m`` en la línea 10 colocar tu llave pública de Conekta ([admin.conekta.io](https://admin.conekta.io/es#developers.keys)):
 ``NSString *PUBLIC_API_KEY = @"key_XXXXxxxxXXXXxxxx";``
 
-3. Al abrir la aplicación puedes hacer SimplePayment
+3. Al abrir la aplicación puedes hacer pruebas con SimplePayment que realiza una llamada directa
 
+![alt tag](https://raw.github.com/javiermurillo/PagosObjectiveC/master/readme_files/ios_all.png)
 
-## Configuración para Crear Customers y Charge on-demand.
+### Configuración para Crear Customers y Charge on-demand.
 
 Si quieres utilizar  Charge on-demand, crear Customers, es importante completar la Configuración Inicial para hacer SimplePayment
 y agregar lo siguiente:
@@ -19,7 +20,7 @@ apuntarlo a tu PaymentServer Local, por ejemplo:  ``http://127.0.0.1:3000``
 
 2. Puedes utilizar este ejemplo en Node del [PaymentServer](https://github.com/javiermurillo/NodePaymentserver) para resolver los request de iOS.
 
-## ¿Qué se hace desde iOS?
+### ¿Qué se hace desde iOS?
 
 1. Se tokeniza la tarjeta
 
@@ -28,10 +29,10 @@ directamente a los servidores de Conekta.
 
 3. Se realizan cargos simples utilizando el token.
 
-## Tokenizar
+### Tokenizar
 
 Desde iOS se introducen los datos de la tarjeta y son enviados
 
-## SimplePayment
+### SimplePayment
 
 Funcionalidad que se manda a llamar para realizar un cargo directamente desde la aplicación de iOS.
