@@ -9,6 +9,8 @@
 
 @synthesize baseUrl, createClientUrl, addCardToClientUrl, chargeUrl;
 
+NSString *PAYMENT_SERVER_URL = @"http://127.0.0.1:3000";
+
 - (id)initWithBaseUrl:(NSString*)newBaseUrl{
     self = [super init];
     if (self) {
@@ -146,6 +148,7 @@
     
     NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:url];
     [request setHTTPMethod:@"POST"];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Content-type"];
     [request setHTTPBody:[charge asJSONData]];
     
     NSURLSessionDataTask* task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
