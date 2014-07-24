@@ -8,7 +8,6 @@
 3. Al abrir la aplicación puedes hacer SimplePayment
 
 
-
 ## Configuración para Crear Customers y Charge on-demand.
 
 Si quieres utilizar  Charge on-demand, crear Customers, es importante completar la Configuración Inicial para hacer SimplePayment
@@ -32,3 +31,5 @@ directamente a los servidores de Conekta.
 ## Tokenizar
 
 Desde iOS se introducen los datos de la tarjeta y son enviados
+
+## SimplePayment
