@@ -28,7 +28,7 @@
 - (IBAction)makePayment:(id)sender{
     NSLog(@"Starting to make a Payment in the View Controller");
     
-    DFConekta* conekta = [[DFConekta alloc] initWithApiKey:@"Qfw4ZozppXFtvDqaUdt1"];
+    DFConekta* conekta = [[DFConekta alloc] initWithApiKey:PUBLIC_API_KEY];
 
     DFCard* card = [[DFCard alloc] init];
     

@@ -28,8 +28,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    conekta = [[DFConekta alloc] initWithApiKey:@"Qfw4ZozppXFtvDqaUdt1"];
-    DFPaymentServer* paymentServer = [[DFPaymentServer alloc] initWithBaseUrl:@"http://127.0.0.1:3000"];
+    conekta = [[DFConekta alloc] initWithApiKey:PUBLIC_API_KEY];
+    DFPaymentServer* paymentServer = [[DFPaymentServer alloc] initWithBaseUrl:PAYMENT_SERVER_URL];
     
     [conekta setPaymentServer:paymentServer];
     
