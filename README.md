@@ -33,3 +33,5 @@ directamente a los servidores de Conekta.
 Desde iOS se introducen los datos de la tarjeta y son enviados
 
 ## SimplePayment
+
+Funcionalidad que se manda a llamar para realizar un cargo directamente desde la aplicación de iOS.
