@@ -7,6 +7,8 @@
 
 @implementation DFConekta
 
+NSString *PUBLIC_API_KEY = @"key_EVryd61Uhsq9d6Z2";
+
 @synthesize apiKey, paymentServer;
 
 + (NSDictionary*)parseJSON:(NSData*) inputData{
