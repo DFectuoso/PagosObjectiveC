@@ -9,6 +9,7 @@
 
 ![alt tag](https://raw.github.com/javiermurillo/PagosObjectiveC/master/readme_files/ios_all.png)
 ![alt tag](https://raw.github.com/javiermurillo/PagosObjectiveC/master/readme_files/simple_payment.png)
+![alt tag](https://raw.github.com/javiermurillo/PagosObjectiveC/master/readme_files/paid_simple_payment.png)
 
 ### Configuración para Crear Customers y Charge on-demand.
 
