@@ -1,11 +1,11 @@
-### Configuración Inicial en iOS (tokenizar & SimplePayment)
+### Configuración Inicial en iOS (Crear Token y hacer Pago directo al API)
 
 1. Clonar el proyecto ``git clone repositorio`` y abrir con Xcode.
 
 2. Ir al archivo ``PagosObjectiveC/DFConekta.m`` en la línea 10 colocar tu llave pública de Conekta ([admin.conekta.io](https://admin.conekta.io/es#developers.keys)):
 ``NSString *PUBLIC_API_KEY = @"key_XXXXxxxxXXXXxxxx";``
 
-3. Al abrir la aplicación puedes hacer pruebas con SimplePayment que realiza una llamada directa
+3. Al abrir la aplicación puedes hacer pruebas, en "Payment to Conekta API" tokenizando una tarjeta y creando un Cargo directamente a https://api.conekta.io/charges
 
 ![alt tag](https://raw.github.com/javiermurillo/PagosObjectiveC/master/readme_files/pay_to_api_conekta.gif)
 
@@ -33,6 +33,10 @@ directamente a los servidores de Conekta.
 
 Desde iOS se introducen los datos de la tarjeta y son enviados
 
-### SimplePayment
+### Payment to Conekta API
 
-Funcionalidad que se manda a llamar para realizar un cargo directamente desde la aplicación de iOS.
+Esta funcionalidad en la aplicaicón, realiza lo siguiente:
+
+1. Tokeniza la tarjeta que se introduce directamente.
+2. Realiza un Cargo único con el token que obtiene de la tarjeta.
+3. Arroja un mensaje de Cargo exitoso con el id de la transacción.
