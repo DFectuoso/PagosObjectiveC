@@ -7,9 +7,7 @@
 
 3. Al abrir la aplicación puedes hacer pruebas con SimplePayment que realiza una llamada directa
 
-![alt tag](https://raw.github.com/javiermurillo/PagosObjectiveC/master/readme_files/ios_all.png)
-![alt tag](https://raw.github.com/javiermurillo/PagosObjectiveC/master/readme_files/simple_payment.png)
-![alt tag](https://raw.github.com/javiermurillo/PagosObjectiveC/master/readme_files/paid_simple_payment.png)
+![alt tag](https://raw.github.com/javiermurillo/PagosObjectiveC/master/readme_files/pay_to_api_conekta.gif)
 
 ### Configuración para Crear Customers y Charge on-demand.
 
