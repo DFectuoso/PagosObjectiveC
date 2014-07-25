@@ -1,6 +1,6 @@
 ### Configuración Inicial en iOS (Crear Token y hacer Pago directo al API)
 
-1. Clonar el proyecto ``git clone repositorio`` y abrir con Xcode.
+1. Clonar el proyecto ``git clone git@github.com:javiermurillo/PagosObjectiveC.git`` y abrir con Xcode.
 
 2. Ir al archivo ``PagosObjectiveC/DFConekta.m`` en la línea 10 colocar tu llave pública de Conekta ([admin.conekta.io](https://admin.conekta.io/es#developers.keys)):
 ``NSString *PUBLIC_API_KEY = @"key_XXXXxxxxXXXXxxxx";``
