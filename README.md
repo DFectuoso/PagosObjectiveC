@@ -20,6 +20,8 @@ apuntarlo a tu PaymentServer Local, por ejemplo:  ``http://127.0.0.1:3000``
 
 2. Puedes utilizar este ejemplo en Node del [PaymentServer](https://github.com/javiermurillo/NodePaymentserver) para resolver los request de iOS.
 
+![alt tag](https://raw.github.com/javiermurillo/PagosObjectiveC/master/readme_files/customer_payment.gif)
+
 ### ¿Qué se hace desde iOS?
 
 1. Se tokeniza la tarjeta
