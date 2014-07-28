@@ -16,7 +16,6 @@
                              \"card\": \"%@\",\
                              \"customer\": \"%@\"\
                              }", self.description, self.amount,self.currency,self.referenceId,self.cardToken.conektaId, self.customer.conektaId];
-    NSLog(@"ATTRIBUTOS: %@", paramString);
     return [paramString dataUsingEncoding:NSUTF8StringEncoding];
 }
 
