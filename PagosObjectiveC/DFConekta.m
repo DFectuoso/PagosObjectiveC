@@ -44,7 +44,7 @@ NSString *PUBLIC_API_KEY = @"key_EVryd61Uhsq9d6Z2";
     [request addValue:[NSString stringWithFormat:@"Basic %@", [self apiKeyAsBase64]] forHTTPHeaderField:@"Authorization"];
     [request addValue:@"application/vnd.conekta-v0.3.0+json" forHTTPHeaderField:@"Accept"];
     [request addValue:@"application/json" forHTTPHeaderField:@"Content-type"];
-    [request addValue:@"{\"agent\":\"Conekta JavascriptBindings\"}" forHTTPHeaderField:@"Conekta-Client-User-Agent"];
+    [request addValue:@"{\"agent\":\"Conekta Conekta iOS SDK\"}" forHTTPHeaderField:@"Conekta-Client-User-Agent"];
     
     [request setHTTPBody:[card asJSONData]];
     
@@ -108,7 +108,7 @@ NSString *PUBLIC_API_KEY = @"key_EVryd61Uhsq9d6Z2";
         [request addValue:[NSString stringWithFormat:@"Basic %@", [self apiKeyAsBase64]] forHTTPHeaderField:@"Authorization"];
         [request addValue:@"application/vnd.conekta-v0.3.0+json" forHTTPHeaderField:@"Accept"];
         [request addValue:@"application/json" forHTTPHeaderField:@"Content-type"];
-        [request addValue:@"{\"agent\":\"Conekta JavascriptBindings\"}" forHTTPHeaderField:@"Conekta-Client-User-Agent"];
+        [request addValue:@"{\"agent\":\"Conekta Conekta iOS SDK\"}" forHTTPHeaderField:@"Conekta-Client-User-Agent"];
         
         [request setHTTPBody:[charge asJSONData]];
         
@@ -142,7 +142,7 @@ NSString *PUBLIC_API_KEY = @"key_EVryd61Uhsq9d6Z2";
                     success(charge);
                 } else {
                     
-                    // Conekta has a bug, sometime the error is <null>, so we have to default the code to 0 in that case
+                    // Sometime the error is <null>, so we have to default the code to 0 in that case
                     NSInteger code;
                     if ([answer valueForKey:@"code"] == [NSNull null]) {
                         code = 0;
