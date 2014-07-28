@@ -29,7 +29,6 @@ NSString *PAYMENT_SERVER_URL = @"http://127.0.0.1:3000";
     [request setHTTPMethod:@"POST"];
 
     [request setHTTPBody:[@"" dataUsingEncoding:NSUTF8StringEncoding]];
-    
     NSURLSessionDataTask* task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         if(error){
             // Answer with the NSURLSession error, since that is where the request failed
@@ -54,7 +53,7 @@ NSString *PAYMENT_SERVER_URL = @"http://127.0.0.1:3000";
                 success(client);
             } else {
                 NSLog(@"%@", answer);
-                // Conekta has a bug, sometime the error is <null>, so we have to default the code to 0 in that case
+                // Sometime the error is <null>, so we have to default the code to 0 in that case
                 NSInteger code;
                 if ([answer valueForKey:@"code"] == [NSNull null]) {
                     code = 0;
@@ -111,7 +110,6 @@ NSString *PAYMENT_SERVER_URL = @"http://127.0.0.1:3000";
 
                 success(card);
             } else {
-                NSLog(@"%@", answer);
                 // Conekta has a bug, sometime the error is <null>, so we have to default the code to 0 in that case
                 NSInteger code;
                 if ([answer valueForKey:@"code"] == [NSNull null]) {

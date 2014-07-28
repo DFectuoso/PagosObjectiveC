@@ -42,7 +42,6 @@
 - (IBAction)clearSession:(id)sender{
     DFConekta* conekta = [[DFConekta alloc] initWithApiKey:PUBLIC_API_KEY];
     [conekta clearLocalClient];
-    NSLog(@"Cleared");
 }
 
 - (void)didReceiveMemoryWarning {
