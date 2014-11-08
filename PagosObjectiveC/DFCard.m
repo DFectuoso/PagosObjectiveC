@@ -6,12 +6,13 @@
 
 @synthesize name, number, cvc, yearExp, monthExp, conektaId, last4, active, brand;
 
+// CVC as string to allow CVCs that start with 0. 
 - (NSData*) asJSONData{
     NSString* paramString = [NSString stringWithFormat:@"{\"card\": \
                              { \
                                 \"name\": \"%@\",\
                                 \"number\": %@,\
-                                \"cvc\": %@,\
+                                \"cvc\": \"%@\",\
                                 \"exp_month\": %@,\
                                 \"exp_year\": %@\
                              }}", self.name, self.number,self.cvc,self.monthExp,self.yearExp];

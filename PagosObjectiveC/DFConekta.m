@@ -48,9 +48,9 @@ NSString *PUBLIC_API_KEY = @"key_EVryd61Uhsq9d6Z2";
     
     [request setHTTPBody:[card asJSONData]];
     
-    NSURLSessionDataTask* task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-        NSLog(@"Tokenizing answered, about to process");
-        if(error){
+    // Async request to avoid UI block.
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error)
+     {  if(error){
             // Answer with the NSURLSession error, since that is where the request failed
             fail(error);
         } else {
@@ -92,8 +92,6 @@ NSString *PUBLIC_API_KEY = @"key_EVryd61Uhsq9d6Z2";
             
         }
     }];
-    
-    [task resume];
 }
 
 - (void)simpleCharge:(DFCard*) card charge:(DFCharge*)charge withSuccess:(void (^)(DFCharge* charge))success fail:(void (^)(NSError* error))fail{
