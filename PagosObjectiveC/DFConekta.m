@@ -48,7 +48,7 @@ NSString *PUBLIC_API_KEY = @"key_EVryd61Uhsq9d6Z2";
     
     [request setHTTPBody:[card asJSONData]];
     
-    // Async request to avoid UI block.
+    // Async request to avoid UI block. 
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error)
      {  if(error){
             // Answer with the NSURLSession error, since that is where the request failed
