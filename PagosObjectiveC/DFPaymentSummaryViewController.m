@@ -23,7 +23,7 @@
         charge = [[DFCharge alloc] init];
         
         charge.description = @"Test charge from iOS";
-        charge.amount = @"5000";
+        charge.amount = @"50000";
         charge.currency = @"MXN";
         
         // Random string

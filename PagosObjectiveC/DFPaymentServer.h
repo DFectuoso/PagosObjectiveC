@@ -13,6 +13,8 @@
     NSString* chargeUrl;
 }
 
+extern NSString *PAYMENT_SERVER_URL;
+
 @property(nonatomic,strong)NSString* baseUrl;
 @property(nonatomic,strong)NSString* createClientUrl;
 @property(nonatomic,strong)NSString* addCardToClientUrl;

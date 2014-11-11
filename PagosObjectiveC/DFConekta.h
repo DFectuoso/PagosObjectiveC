@@ -11,6 +11,8 @@
     DFPaymentServer* paymentServer;
 }
 
+extern NSString *PUBLIC_API_KEY;
+
 @property(strong, nonatomic) NSString* apiKey;
 @property(strong, nonatomic) DFPaymentServer* paymentServer;
 
